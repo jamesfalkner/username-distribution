@@ -29,7 +29,12 @@ const env = require('env-var').from({
 module.exports = {
   redis: {
     host: env.get('LAB_REDIS_HOST').asString(),
+    port: env.get('LAB_REDIS_PORT').asString(),
     password: env.get('LAB_REDIS_PASS').asString()
+  },
+  dg: {
+    host: env.get('LAB_DG_HOST').asString(),
+    port: env.get('LAB_DG_PORT').asString(),
   },
   adminPassword: env.get('LAB_ADMIN_PASS').asString(),
   sessionSecret: env.get('LAB_SESSION_SECRET').asString(),

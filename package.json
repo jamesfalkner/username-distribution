@@ -21,6 +21,7 @@
     "express-basic-auth": "~1.2.0",
     "express-session": "~1.17.1",
     "hbs": "~4.1.1",
+    "infinispan": "^0.7.0",
     "less-middleware": "~3.1.0",
     "lodash.maxby": "~4.6.0",
     "morgan": "~1.9.1",

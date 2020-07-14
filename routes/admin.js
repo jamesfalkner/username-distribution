@@ -103,6 +103,7 @@ router.get('/unassign/:username', async (req, res, next) => {
   const destroySession = promisify(sessions.destroy).bind(sessions)
 
   function findSessionInList (sessionList, username) {
+    log("findSessionsInList: " + JSON.stringify(sessionList));
     if (Array.isArray(sessionList)) {
       // For some reason Redis returns an array of sessions where ID is a property
       return sessionList.find(s => s.username === username).id
